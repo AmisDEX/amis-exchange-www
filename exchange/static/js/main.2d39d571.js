@@ -28458,7 +28458,7 @@
                 name: "AMIS (Ropsten TEST)",
                 address: "0x949bed886c739f1a3273629b3320db0c5024c719",
                 abiArray: s,
-                minInitialSize: "0.001"
+                minInitialSize: "0.0001"
             },
             cntr: {
                 tradableType: "Ether",
@@ -28489,7 +28489,7 @@
                 name: "AMIS (Ropsten TEST)",
                 address: "0x949bed886c739f1a3273629b3320db0c5024c719",
                 abiArray: s,
-                minInitialSize: "0.001"
+                minInitialSize: "0.0001"
             },
             cntr: {
                 tradableType: "Ether",
@@ -28676,7 +28676,7 @@
                 name: "AMIS",
                 address: "0x949bed886c739f1a3273629b3320db0c5024c719",
                 abiArray: s,
-                minInitialSize: "0.001"
+                minInitialSize: "0.0001"
             },
             cntr: {
                 tradableType: "Ether",
