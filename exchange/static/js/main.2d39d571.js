@@ -543,7 +543,7 @@
 , function(e, t, n) {
     "use strict";
     function r(e) {
-        for (var t = arguments.length - 1, n = "Minified React error #" + e + "; visit http://facebook.github.io/react/docs/error-decoder.html?invariant=" + e, r = 0; r < t; r++)
+        for (var t = arguments.length - 1, n = "Minified React error #" + e + "; visit https://facebook.github.io/react/docs/error-decoder.html?invariant=" + e, r = 0; r < t; r++)
             n += "&args[]=" + encodeURIComponent(arguments[r + 1]);
         n += " for the full message or use the non-minified dev environment for full errors and additional helpful warnings.";
         var o = new Error(n);
@@ -28676,14 +28676,14 @@
                 name: "AMIS",
                 address: "0x949bed886c739f1a3273629b3320db0c5024c719",
                 abiArray: s,
-                minInitialSize: "0.0001"
+                minInitialSize: "0.01"
             },
             cntr: {
                 tradableType: "Ether",
                 symbol: "ETH",
                 decimals: 18,
                 name: "Ether",
-                minInitialSize: "0.001"
+                minInitialSize: "0.01"
             },
             rwrd: {
                 tradableType: "ERC20",
@@ -33455,7 +33455,7 @@
                 }, s.a.createElement("p", null, 'Your Ethereum account may not have enough ETH to pay for "gas" fees.'), s.a.createElement("p", null, "Gas fees are needed to send Ethereum transactions, such as when placing orders or making payments."), s.a.createElement("p", null, "Consider topping up your ", i.props.bridgeStatus.chosenAccount, " account with more Ether (", s.a.createElement("i", null, "not"), " your book contract balance).")) : void 0 : s.a.createElement(u.x, {
                     header: "Unknown Ethereum Connection Problem",
                     bsStyle: "danger"
-                }, s.a.createElement("p", null, "Some unusual problem has occurred preventing AMIS Exchange connecting to the Ethereum Network."), s.a.createElement("p", null, "Try reloading this page, wait..., or contact us on our gitchat https://gitter.im/amis-delta-dex/Lobby with details of the persistent problem.")) : s.a.createElement(u.x, {
+                }, s.a.createElement("p", null, "Some unusual problem has occurred preventing AMIS Exchange connecting to the Ethereum Network."), s.a.createElement("p", null, "Try reloading this page, wait..., or contact us on our gitchat https://gitter.im/amis-delta-dex/Lobby with details of the persistent problem. Problem might be related to your privacy option settings in Metamask 6.2.2 if privacy mode is enabled; disable it temporarily to fix the issue.")) : s.a.createElement(u.x, {
                     header: "View Only Mode - Reload this page to choose a different way to connect to the Ethereum network.",
                     bsStyle: "info"
                 }, s.a.createElement("p", null, "You are connected to the Ethereum network as a guest, so you will not be able to make payments or place orders.")) : s.a.createElement(u.x, {
