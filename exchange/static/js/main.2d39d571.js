@@ -28662,6 +28662,38 @@
                 abiArray: s
             }
         },
+        "AMIS-ETC": {
+            networkId: "1",
+            bookAddress: "0xb2adcefb5ec66e953baf669a6e85bb8699b7336f",
+            bookAbiArray: i,
+            symbol: "AMIS-ETC",
+            bookStartBlock: 8826137, // 8812808,
+            priceRangeAdjustment: -2,
+            base: {
+                tradableType: "ERC20",
+                symbol: "AMIS",
+                decimals: 9,
+                name: "AMIS",
+                address: "0xd8ebe4e6ac8d3c85e2f243e11e8b96c9b12c85af",
+                abiArray: s,
+                minInitialSize: "0.001"
+            },
+            quote: {
+                tradableType: "Ether",
+                symbol: "ETH",
+                decimals: 18,
+                name: "Ether",
+                minInitialSize: "0.001"
+            },
+            rwrd: {
+                tradableType: "ERC20",
+                symbol: "WETC",
+                decimals: 18,
+                name: "Wrapped ETC",
+                address: "0xef3da599a7c0de182f4af53032e57cc5d06551a7",
+                abiArray: s
+            }
+        },
         "AMIS-ETH": {
             networkId: "1",
             bookAddress: "0x2cc69cAaaAa6114ddf48F4DdB2AdB9c5d5d3e048",
