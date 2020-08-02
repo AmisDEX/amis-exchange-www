@@ -10030,7 +10030,7 @@
 , function(e, t, n) {
     "use strict";
     function r(e) {
-        for (var t = arguments.length - 1, n = "Minified React error #" + e + "; visit http://facebook.github.io/react/docs/error-decoder.html?invariant=" + e, r = 0; r < t; r++)
+        for (var t = arguments.length - 1, n = "Minified React error #" + e + "; visit https://facebook.github.io/react/docs/error-decoder.html?invariant=" + e, r = 0; r < t; r++)
             n += "&args[]=" + encodeURIComponent(arguments[r + 1]);
         n += " for the full message or use the non-minified dev environment for full errors and additional helpful warnings.";
         var o = new Error(n);
@@ -28345,6 +28345,11 @@
             name: "Kovan Test Network",
             liveness: "TEST"
         },
+        61: {
+            networkId: "61",
+            name: "ETC Network",
+            liveness: "LIVE"
+        },
         1: {
             networkId: "1",
             name: "Main Network",
@@ -28445,6 +28450,37 @@
                 abiArray: s
             }
         },
+        "AMISTEST-ETC": {
+            networkId: "61",
+            bookAddress: "0x8D9c1aA79d8e58f508180E9BF16D48f42234993e",
+            bookAbiArray: a,
+            symbol: "AMISTEST-ETC",
+            priceRangeAdjustment: -2,
+            base: {
+                tradableType: "ERC20",
+                symbol: "AMISTEST",
+                decimals: 9,
+                name: "AMIS (Morden TEST)",
+                address: "0x949bed886c739f1a3273629b3320db0c5024c719",
+                abiArray: s,
+                minInitialSize: "0.0001"
+            },
+            cntr: {
+                tradableType: "Ether",
+                symbol: "ETH",
+                decimals: 18,
+                name: "Test Ether (Morden)",
+                minInitialSize: "0.001"
+            },
+            rwrd: {
+                tradableType: "ERC20",
+                symbol: "CRSW",
+                decimals: 18,
+                name: "CRSW Token",
+                address: "0x58743FD1b94184B9D451fbC06C8AD4Fe7b53A488",
+                abiArray: s
+            }
+        },
         "AMISTEST-ETH": {
             networkId: "3",
             bookAddress: "0x8D9c1aA79d8e58f508180E9BF16D48f42234993e",
@@ -28490,37 +28526,6 @@
                 address: "0x949bed886c739f1a3273629b3320db0c5024c719",
                 abiArray: s,
                 minInitialSize: "0.0001"
-            },
-            cntr: {
-                tradableType: "Ether",
-                symbol: "ETH",
-                decimals: 18,
-                name: "Test Ether (Ropsten)",
-                minInitialSize: "0.001"
-            },
-            rwrd: {
-                tradableType: "ERC20",
-                symbol: "CRSW",
-                decimals: 18,
-                name: "CRSW Token",
-                address: "0x58743FD1b94184B9D451fbC06C8AD4Fe7b53A488",
-                abiArray: s
-            }
-        },
-        "AMISTEST2-ETH": {
-            networkId: "3",
-            bookAddress: "0xb64d5d9242dd2d506d50f1505fc61b140b8be61e",
-            bookAbiArray: a,
-            symbol: "AMIS-ETH",
-            priceRangeAdjustment: -2,
-            base: {
-                tradableType: "ERC20",
-                symbol: "AMIS",
-                decimals: 9,
-                name: "AMIS (Ropsten TEST)",
-                address: "0x949bed886c739f1a3273629b3320db0c5024c719",
-                abiArray: s,
-                minInitialSize: "0.001"
             },
             cntr: {
                 tradableType: "Ether",
@@ -28600,71 +28605,9 @@
                 abiArray: s
             }
         },
-        "AMISK-ETH": {
-            networkId: "42",
-            bookAddress: "0x13cf20b0a6053ba53855e5574ad049323109b0c4",
-            bookAbiArray: i,
-            symbol: "AMIS-ETH",
-            priceRangeAdjustment: -2,
-            base: {
-                tradableType: "ERC20",
-                symbol: "AMIS",
-                decimals: 9,
-                name: "AMIS (Kovan)",
-                address: "0x7161f09a6ae81b546bebc04b24629c4f3dad746f",
-                abiArray: s,
-                minInitialSize: "0.001"
-            },
-            cntr: {
-                tradableType: "Ether",
-                symbol: "ETH",
-                decimals: 18,
-                name: "Test Ether (Kovan)",
-                minInitialSize: "0.001"
-            },
-            rwrd: {
-                tradableType: "ERC20",
-                symbol: "UBI",
-                decimals: 18,
-                name: "Test Ubi Reward Token (Kovan)",
-                address: "0xB7C7D8488966BD297BAB7Ca780FB1923F982A419",
-                abiArray: s
-            }
-        },
-        "AMISK1-ETH": {
-            networkId: "42",
-            bookAddress: "0x6cbb213c74b38578a6ee866a5a9864912fbc2e0e",
-            bookAbiArray: i,
-            symbol: "AMIS-ETH",
-            priceRangeAdjustment: -2,
-            base: {
-                tradableType: "ERC20",
-                symbol: "AMIS",
-                decimals: 9,
-                name: "AMIS (Kovan)",
-                address: "0x7161f09a6ae81b546bebc04b24629c4f3dad746f",
-                abiArray: s,
-                minInitialSize: "0.001"
-            },
-            cntr: {
-                tradableType: "Ether",
-                symbol: "ETH",
-                decimals: 18,
-                name: "Test Ether (Kovan)",
-                minInitialSize: "0.001"
-            },
-            rwrd: {
-                tradableType: "ERC20",
-                symbol: "UBI",
-                decimals: 18,
-                name: "Test Ubi Reward Token (Kovan)",
-                address: "0xB7C7D8488966BD297BAB7Ca780FB1923F982A419",
-                abiArray: s
-            }
-        },
         "AMIS-ETC": {
-            networkId: "1",
-            bookAddress: "0xb2adcefb5ec66e953baf669a6e85bb8699b7336f",
+            networkId: "61",
+            bookAddress: "0xb2adcefb5ec66e953baf669a6e85bb8699b7336f", // 0xe4cdd296ac85c7d8477988f582d457e638349947
             bookAbiArray: i,
             symbol: "AMIS-ETC",
             bookStartBlock: 8826137, // 8812808,
@@ -28708,7 +28651,7 @@
                 name: "AMIS",
                 address: "0x949bed886c739f1a3273629b3320db0c5024c719",
                 abiArray: s,
-                minInitialSize: "0.01"
+                minInitialSize: "0.1"
             },
             cntr: {
                 tradableType: "Ether",
@@ -31795,8 +31738,8 @@
                 }) : void 0, s.a.createElement("img", {
                     src: g.a,
                     className: "App-logo",
-                    alt: "AMIS Dex Exchange"
-                }), "- The official decentralized exchange with on-chain orderbook and built-in order matching engine for trading the AMIS pair"), s.a.createElement(u.a, null, s.a.createElement(u.b, null, s.a.createElement(u.c, {
+                    alt: "AMIS Exchange"
+                }), "- The official decentralized exchange with on-chain orderbook and built-in matching engine for trading the AMIS pair"), s.a.createElement(u.a, null, s.a.createElement(u.b, null, s.a.createElement(u.c, {
                     inverse: !0
                 }, s.a.createElement(u.d, {
                     bsStyle: "pills",
@@ -31817,7 +31760,7 @@
                     onClick: this.handleBookInfoShow
                 }, s.a.createElement(u.h, {
                     glyph: "info-sign",
-                    title: "book info"
+                    title: "Orderbook info"
                 }))), s.a.createElement(C.a, {
                     bridgeStatus: this.state.bridgeStatus
                 }), s.a.createElement(u.d, {
@@ -32827,7 +32770,7 @@
         }
         ,
         this.handleTopNavSelect = function(t) {
-            "Home" === t ? window.open("https://amisdex.github.io/amis-exchange-www", "_blank") : "ViewBooks" === t ? window.open("https://amisdex.github.io/amis-exchange-www/products/", "_blank") : "Help" === t ? window.open("https://amisdex.github.io/amis-exchange-www/help/", "_blank") : "DemoHelp" === t && e.setState(function(e, t) {
+            "Home" === t ? window.open("https://amisdex.amisolution.net", "_blank") : "ViewBooks" === t ? window.open("https://amisdex.amisolution.net/products/", "_blank") : "Help" === t ? window.open("https://amisdex.amisolution.net/help/", "_blank") : "DemoHelp" === t && e.setState(function(e, t) {
                 return {
                     showDemoHelp: !0
                 }
@@ -33180,7 +33123,7 @@
                     rel: "noopener noreferrer"
                 }, this.props.pairInfo.base.address), ".", s.a.createElement("br", null), "Careful though - never send tokens (or ether) to a token address - that's not how it works and you won't get them back.") : void 0, "TEST" === this.props.pairInfo.liveness ? s.a.createElement(u.x, {
                     bsStyle: "info"
-                }, s.a.createElement("strong", null, "This is a test token!!"), s.a.createElement("br", null), s.a.createElement("br", null), "You will need Metamask installed on Ropsten plus some ROPSTEN ETH to be able to make trades. You can get some for free from the Ropsten metamask faucet https://faucet.metamask.io/ or HERE => ", s.a.createElement("a", {
+                }, s.a.createElement("strong", null, "This is a test token!!"), s.a.createElement("br", null), s.a.createElement("br", null), "You will need ROPSTEN ETH to be able to make trades. You can come some for free from the Ropsten faucet ", s.a.createElement("a", {
                     href: "http://faucet.ropsten.be:3001/",
                     target: "_blank"
                 }, "here"), s.a.createElement("br", null), s.a.createElement("br", null), "The address of this token is:", s.a.createElement("a", {
@@ -33472,22 +33415,22 @@
                 }, s.a.createElement("p", null, "Waiting for MetaMask, Mist, INFURA or other web3 provider to initialise ...")) : i.props.bridgeStatus.web3Present ? i.props.bridgeStatus.unsupportedNetwork ? s.a.createElement(u.x, {
                     header: "Unsupported Ethereum Network",
                     bsStyle: "danger"
-                }, s.a.createElement("p", null, "This book is only available on the ", i.props.bridgeStatus.targetNetworkName, "."), s.a.createElement("p", null, "Try changing Ethereum Network in your Ethereum Client (e.g. Metamask, Mist). You might need to reload this page.")) : i.props.bridgeStatus.networkChanged ? s.a.createElement(u.x, {
+                }, s.a.createElement("p", null, "This book is only available on the ", i.props.bridgeStatus.targetNetworkName, "."), s.a.createElement("p", null, "Try changing Ethereum Network in your Ethereum Client (e.g. Metamask, Mist, Ledger). You might need to reload this page.")) : i.props.bridgeStatus.networkChanged ? s.a.createElement(u.x, {
                     header: "Ethereum Network Changed",
                     bsStyle: "danger"
-                }, s.a.createElement("p", null, "You seem to have changed Ethereum Network."), s.a.createElement("p", null, "Try changing Ethereum Network in your Ethereum Client (e.g. MetaMask, Mist) back to ", i.props.bridgeStatus.chosenSupportedNetworkName, ", or reload this page to pick up the new network.")) : i.props.bridgeStatus.accountLocked && i.props.bridgeStatus.mightReadAccountOrders ? s.a.createElement(u.x, {
+                }, s.a.createElement("p", null, "You seem to have changed Ethereum Network."), s.a.createElement("p", null, "Try changing Ethereum Network in your Ethereum Client (e.g. MetaMask, Mist, Ledger) back to ", i.props.bridgeStatus.chosenSupportedNetworkName, ", or reload this page to pick up the new network.")) : i.props.bridgeStatus.accountLocked && i.props.bridgeStatus.mightReadAccountOrders ? s.a.createElement(u.x, {
                     header: "Ethereum Account Locked",
                     bsStyle: "danger"
-                }, s.a.createElement("p", null, "We need to know which Ethereum account to use."), s.a.createElement("p", null, "Try unlocking your Ethereum Client (e.g. MetaMask, Mist). You might need to reload this page after unlocking.")) : i.props.bridgeStatus.accountChanged ? s.a.createElement(u.x, {
+                }, s.a.createElement("p", null, "We need to know which Ethereum account to use."), s.a.createElement("p", null, "Try unlocking your Ethereum Client (e.g. MetaMask, Mist, Ledger). You might need to reload this page after unlocking.")) : i.props.bridgeStatus.accountChanged ? s.a.createElement(u.x, {
                     header: "Ethereum Account Changed",
                     bsStyle: "danger"
-                }, s.a.createElement("p", null, "You seem to have changed Ethereum Account."), s.a.createElement("p", null, "Try changing Ethereum Account in your Ethereum Client (e.g. Metamask, Mist) back to ", i.props.bridgeStatus.chosenAccount, ", or reload this page to pick up the new account.")) : i.props.bridgeStatus.mightReadAccountOrders ? i.props.bridgeStatus.canReadBook && i.props.bridgeStatus.canReadAccountOrders ? i.props.ownEthBalance && new m(i.props.ownEthBalance).lt("0.005") ? s.a.createElement(u.x, {
+                }, s.a.createElement("p", null, "You seem to have changed Ethereum Account."), s.a.createElement("p", null, "Try changing Ethereum Account in your Ethereum Client (e.g. Metamask, Mist, Ledger) back to ", i.props.bridgeStatus.chosenAccount, ", or reload this page to pick up the new account.")) : i.props.bridgeStatus.mightReadAccountOrders ? i.props.bridgeStatus.canReadBook && i.props.bridgeStatus.canReadAccountOrders ? i.props.ownEthBalance && new m(i.props.ownEthBalance).lt("0.005") ? s.a.createElement(u.x, {
                     header: "Low Ethereum Balance",
                     bsStyle: "danger"
                 }, s.a.createElement("p", null, 'Your Ethereum account may not have enough ETH to pay for "gas" fees.'), s.a.createElement("p", null, "Gas fees are needed to send Ethereum transactions, such as when placing orders or making payments."), s.a.createElement("p", null, "Consider topping up your ", i.props.bridgeStatus.chosenAccount, " account with more Ether (", s.a.createElement("i", null, "not"), " your book contract balance).")) : void 0 : s.a.createElement(u.x, {
                     header: "Unknown Ethereum Connection Problem",
                     bsStyle: "danger"
-                }, s.a.createElement("p", null, "Some unusual problem has occurred preventing AMIS Exchange connecting to the Ethereum Network."), s.a.createElement("p", null, "Try reloading this page, wait..., or contact us on our gitchat https://gitter.im/amis-delta-dex/Lobby with details of the persistent problem. Problem might be related to your privacy option settings in Metamask 6.2.2 if privacy mode is enabled; disable it temporarily to fix the issue.")) : s.a.createElement(u.x, {
+                }, s.a.createElement("p", null, "Some unusual problems have occurred preventing AMIS Exchange connecting to the Ethereum Network."), s.a.createElement("p", null, "Try reloading this page, or contact us on gitchat with details of the problem.")) : s.a.createElement(u.x, {
                     header: "View Only Mode - Reload this page to choose a different way to connect to the Ethereum network.",
                     bsStyle: "info"
                 }, s.a.createElement("p", null, "You are connected to the Ethereum network as a guest, so you will not be able to make payments or place orders.")) : s.a.createElement(u.x, {
@@ -33823,9 +33766,13 @@
                     text: "Place " + this.props.direction + " Order"
                 })), s.a.createElement(u.u, null, "Please read our ", s.a.createElement("a", {
                     target: "_blank",
-                    href: "http://amisdex.github.io/amis-exchange-www/trading-rules",
+                    href: "https://amisdex.amisolution.net/trading-rules",
                     rel: "noopener noreferrer"
-                }, "Trading Rules"), " for help and terms.")))
+                }, "Trading Rules"), " for user recommendations, guidelines and instructions defined in terms of applicable conditions. Raise an incident on ", s.a.createElement("a", {
+                    target: "_blank",
+                    href: "https://github.com/amis-erc20/amisdex/issues",
+                    rel: "noopener noreferrer"
+                }, "Github issues "), "to get your problem fixed")))
             }
         }]),
         t
@@ -35748,8 +35695,12 @@
                     return "https://ropsten.infura.io/" + e;
                 if ("1" === t)
                     return "https://mainnet.infura.io/" + e;
+                if ("2" === t)
+                    return "https://classic.blockscout.com/" + e;
                 if ("4" === t)
                     return "https://rinkeby.infura.io/" + e;
+                if ("61" === t)
+                    return "https://classic.blockscout.com/" ;
                 throw new Error("unknown networkId " + t)
             }
             ,
@@ -61632,7 +61583,7 @@
     e.exports = n.p + "static/media/create-order-example.28bba4c8.png"
 }
 , function(e, t, n) {
-    e.exports = n.p + "static/media/amis-logo-3df69858.png"
+    e.exports = n.p + "static/media/kiwi-logo.3df69858.png"
 }
 , function(e, t, n) {
     e.exports = n.p + "static/media/metamask.79bd7c91.png"
@@ -63629,11 +63580,11 @@
     e.exports = {
         global: {
             abi: r,
-            address: "0xc6d9d2cd449a754c494264e1809c50e34d64562b"
+            address: "0x5b878ba97bae92fc0aa6133edbf2f58d52350d65"
         },
         icap: {
             abi: o,
-            address: "0xa1a111bc074c9cfa781f0c38e63bd51c91b8af00"
+            address: "0x0b5fa328278442956d405d8b501571e20b96260e"
         }
     }
 }
