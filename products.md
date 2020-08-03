@@ -18,11 +18,12 @@ subtitle: books offered on the amisdex.github.io/amis-exchange-www exchange
 |[TESTI-ETH](http://amisdex.github.io/amis-exchange-www/exchange/?pairId=TESTI-ETH)|n/a|play-money book on "Rinkeby" testnet|
 |[TEST8-ETH](http://amisdex.github.io/amis-exchange-www/exchange/?pairId=TEST8-ETH)|n/a|play-money book on "Rinkeby" testnet|
 
-## Trading Pairs Available At Launch
+## Live Trading Pairs 
 
 |Book|CoinMarketCap / Website|Description|
 |------|----|----|
 |[AMIS-ETH](http://amisdex.github.io/amis-exchange-www/exchange/?pairId=AMIS-ETH)|[AMIS](https://coinmarketcap.com/currencies/amis/)/[AMIS](https://github.com/amisolution/ERC20-AMIS/)|Asset Management Instrument Solution|
+|[AMIS-ETC](http://amisdex.github.io/amis-exchange-www/exchange/?pairId=AMIS-ETC)|[AMIS](https://coingecko.com/en/coins/amis)/[AMIS](https://github.com/amisolution/ERC20-AMIS/)|Asset Management Instrument Solution|
 |[AXYS-ETH](http://amisdex.github.io/amis-exchange-www/exchange/?pairId=GEN-ETH)|[AXYS](https://thekiwi.online/)|AXYS|
 |[BTCL-ETH](http://amisdex.github.io/amis-exchange-www/exchange/?pairId=BTCL-ETH)|[BTCL](https://thekiwi.online/)|BTCL|
 |[BOLD-ETH](http://amisdex.github.io/amis-exchange-www/exchange/?pairId=BOLD-ETH)|[BOLD](https://thekiwi.online/)|BOLD|
